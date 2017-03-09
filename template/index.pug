@@ -1,0 +1,40 @@
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type",content="text/html, charset=UTF-8")
+        title 9 金刚狼 漫威英雄排行榜
+        meta(name="keywords",content="")
+        meta(name="description",content="")
+        link(href="../css/style.css",rel="stylesheet",type="text/css")
+        script(type="text/javascript",src="../js/jquery.min.js")
+        script(type='text/javascript',src='../js/js.js')
+        body
+            -   p!= 'This code is <strong>not</strong> escaped!'
+            div#banner
+                div#logo
+                    a(href="../index.html") 漫威英雄排行榜
+                div#nav
+                    ul
+                        - var n = 10
+                        while n>0
+                            li: a(href="./"+n+".html") #{n--}
+                        div.clearfix
+            div#main
+                div.box-wrapper
+                    div.content
+                        h1 9 金刚狼
+                        div.description
+                            p 金刚狼人气极高，加上强大的自我愈合能力以及帅气至极的埃德曼金属特质利爪，能以一当百，杀敌上万。在他身上，拥有一种“脑后存反骨，手上行正事”的独特精神。而这种精神正是其魅力的源泉。
+                    div.pic
+                        p
+                            img(src="../images/91.jpg")
+                        p
+                            img(src="../images/92.jpg")
+                        p
+                            img(src="../images/93.jpg")
+                        p
+                            img(src="../images/94.jpg")
+                div#footer &copy;版权所有:XXX
+
+
+                    
